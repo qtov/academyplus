@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/20 19:30:04 by pforgaci          #+#    #+#             */
-/*   Updated: 2015/10/20 22:10:43 by pforgaci         ###   ########.fr       */
+/*   Created: 2015/10/20 22:16:42 by pforgaci          #+#    #+#             */
+/*   Updated: 2015/10/20 22:24:46 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-int		main(int ac, char **av)
+int		ft_strcmp(const char *s1, const char *s2)
 {
-	(void)ac;
-	(void)av;
-	printf("%d\n", ft_atoi(av[1]));
-	printf("%d\n", atoi(av[1]));
+	int i;
+
+	i = 0;
+	while (s1[i] || s2[i])
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		++i;
+	}
 	return (0);
 }

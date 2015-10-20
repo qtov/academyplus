@@ -6,7 +6,7 @@
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/20 19:34:23 by pforgaci          #+#    #+#             */
-/*   Updated: 2015/10/20 21:54:55 by pforgaci         ###   ########.fr       */
+/*   Updated: 2015/10/20 22:15:42 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_strstr(const char *s1, const char *s2); //
 char	*ft_strnstr(const char *s1, const char *s2, size_t n); //
 int		ft_strcmp(const char *s1, const char *s2); //
 int		ft_strncmp(const char *s1, const char *s2, size_t n); //
-int		ft_atoi(const char *str); //
+int		ft_atoi(const char *str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c); //norminette
