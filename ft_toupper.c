@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/20 19:30:04 by pforgaci          #+#    #+#             */
-/*   Updated: 2015/10/20 21:51:46 by pforgaci         ###   ########.fr       */
+/*   Created: 2015/10/20 21:18:31 by pforgaci          #+#    #+#             */
+/*   Updated: 2015/10/20 21:19:52 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-int		main(int ac, char **av)
+int		ft_toupper(int c)
 {
-	(void)ac;
-	(void)av;
-	printf("%d\n", ft_isprint(120));
-	printf("%d\n", isprint(120));
-	return (0);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }
