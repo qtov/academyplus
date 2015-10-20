@@ -6,11 +6,16 @@
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/20 19:30:04 by pforgaci          #+#    #+#             */
-/*   Updated: 2015/10/20 19:30:16 by pforgaci         ###   ########.fr       */
+/*   Updated: 2015/10/20 20:22:36 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main(void)
+#include "libft.h"
+#include <string.h>
+#include <stdio.h>
+
+int		main(int ac, char **av)
 {
+	printf("%av[1])
 	return (0);
 }
