@@ -23,15 +23,22 @@ int		main(int ac, char **av)
 	(void)av;
 	//printf("%d\n", ft_strlen(av[1]));
 	//printf("%d\n", strlen(av[1]));
-	write(1, av[1], 8);
+	write(1, av[1], ft_strlen(av[1]));
 	write(1, "\n", 1);
-	ft_memcpy(av[1], av[2], 3);
-	write(1, av[1], 8);
+	write(1, (char *)memccpy(av[1], av[2], 'g', 3), 4);
+	write(1, "\n", 1);
+	write(1, av[1], ft_strlen(av[1]));
 	write(1, "\n", 1);
 	//write(1, av[2], 8);
 	//write(1, "\n", 1);
 	//memcpy(av[2], '$', 3);
 	//write(1, av[2], 8);
 	//write(1, "\n", 1);
+	write(1, av[3], ft_strlen(av[3]));
+	write(1, "\n", 1);
+	write(1, (char *)ft_memccpy(av[3], av[4], 'g', 3), 4);
+	write(1, "\n", 1);
+	write(1, av[3], ft_strlen(av[3]));
+	write(1, "\n", 1);
 	return (0);
 }
