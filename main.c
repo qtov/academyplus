@@ -25,7 +25,7 @@ int		main(int ac, char **av)
 	//printf("%d\n", strlen(av[1]));
 	write(1, av[1], ft_strlen(av[1]));
 	write(1, "\n", 1);
-	write(1, (char *)memmove(av[1], av[2], 3), 4);
+	write(1, (char *)memchr(av[1], av[2][0], ft_strlen(av[1])), 4);
 	write(1, "\n", 1);
 	write(1, av[1], ft_strlen(av[1]) + 3);
 	write(1, "\n", 1);
@@ -36,7 +36,7 @@ int		main(int ac, char **av)
 	//write(1, "\n", 1);
 	write(1, av[3], ft_strlen(av[3]));
 	write(1, "\n", 1);
-	write(1, (char *)ft_memmove(av[3], av[4], 3), 4);
+	write(1, (char *)ft_memchr(av[3], av[4][0], ft_strlen(av[3])), 4);
 	write(1, "\n", 1);
 	write(1, av[3], ft_strlen(av[3]) + 3);
 	write(1, "\n", 1);
