@@ -4,7 +4,7 @@
 #include <strings.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <malloc/malloc.h>
+/* #include <malloc/malloc.h> */
 
 /* Uncomment this if you don't have
 ** Part 2 

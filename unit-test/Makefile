@@ -1,28 +1,27 @@
-.PHONY all, clean, fclean, re
+.PHONY: all, clean, fclean, re
 
 NAME = unit_test
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -pedantic -O3 -I...
-LDFLAGS = -L... -lft
+CFLAGS = -Wall -Werror -Wextra -pedantic -O3 -I./..
+LDFLAGS = -L./.. -lft
 SOURCE = main.c unit_test.c
-OBJ = $(SOURCE.c=.o)
+OBJ = $(SOURCE:%.c=%.o)
 
-all  $(NAME)
+all: $(NAME)
 
-
-$(NAME) $(OBJ) ..libft.a
+$(NAME): $(OBJ) ../libft.a
 	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJ) -o $(NAME)
 
-%.o %.c
-	$(CC) $(CFLAGS) -c $ -o $@
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-clean
+clean:
 	rm -rf $(OBJ)
 
-fclean clean
+fclean:	clean
 	rm -rf $(NAME)
 
-re fclean all
+re:	fclean all
 
-..libft.a
+../libft.a:
 	@make -C ..
