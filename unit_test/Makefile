@@ -5,9 +5,10 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic -O3 -I./..
 LDFLAGS = -L./.. -lft
 SOURCE = main.c unit_test.c
-OBJ = $(SOURCE:%.c=%.o)
+OBJ = $(SOURCE:.c=.o)
 
-all: $(NAME)
+all : $(NAME)
+
 
 $(NAME): $(OBJ) ../libft.a
 	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJ) -o $(NAME)
@@ -18,10 +19,10 @@ $(NAME): $(OBJ) ../libft.a
 clean:
 	rm -rf $(OBJ)
 
-fclean:	clean
+fclean: clean
 	rm -rf $(NAME)
 
-re:	fclean all
+re: fclean all
 
 ../libft.a:
 	@make -C ..

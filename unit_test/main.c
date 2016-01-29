@@ -4,20 +4,20 @@
 #include <strings.h>
 #include <stdlib.h>
 #include <unistd.h>
-/* #include <malloc/malloc.h> */
+#include <malloc/malloc.h>
 
 /* Uncomment this if you don't have
 ** Part 2 
 */
 
-/* #define NO_PART_2 */
+#define NO_PART_2
 
 /*
 ** Same for bonus :
 */
-/*
+
 #define NO_BONUS 
-*/
+
 UT_TEST(ft_memset)
 {
 	char	b1[100], b2[100];
@@ -792,3 +792,4 @@ int	main(void)
 	UT_RUN_ALL_TESTS();
 	return (0);
 }
+

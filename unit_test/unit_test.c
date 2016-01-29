@@ -79,3 +79,4 @@ int			ut_run_all_tests_(void)
 	puts("[ \033[36;1m---------END OF UNIT TESTS---------\033[0m ]");
 	return (_test_fails);
 }
+
