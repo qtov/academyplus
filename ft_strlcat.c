@@ -6,7 +6,7 @@
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/29 14:47:14 by pforgaci          #+#    #+#             */
-/*   Updated: 2016/01/29 14:48:16 by pforgaci         ###   ########.fr       */
+/*   Updated: 2016/01/29 16:40:12 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (i);
 	else
 		return (ft_strlen(src) + size);
-	/*
-		**Or maybe just size.
-	*/
 }

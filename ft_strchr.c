@@ -6,7 +6,7 @@
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/29 14:47:06 by pforgaci          #+#    #+#             */
-/*   Updated: 2016/01/29 15:31:03 by pforgaci         ###   ########.fr       */
+/*   Updated: 2016/01/29 16:39:58 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)(s + i));
 		++i;
 	}
-	return NULL;
+	return (NULL);
 }

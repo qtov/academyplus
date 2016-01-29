@@ -6,7 +6,7 @@
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/29 14:46:51 by pforgaci          #+#    #+#             */
-/*   Updated: 2016/01/29 14:48:09 by pforgaci         ###   ########.fr       */
+/*   Updated: 2016/01/29 16:39:22 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (&tmp[i]);
 		++i;
 	}
-	return NULL;
+	return (NULL);
 }

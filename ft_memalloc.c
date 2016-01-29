@@ -6,7 +6,7 @@
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/29 14:46:47 by pforgaci          #+#    #+#             */
-/*   Updated: 2016/01/29 14:47:58 by pforgaci         ###   ########.fr       */
+/*   Updated: 2016/01/29 16:38:49 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@ void	*ft_memalloc(size_t size)
 	void	*new;
 	size_t	i;
 
+	i = 0;
 	new = (unsigned char *)malloc(size + 1);
 	if (!new)
-		return NULL;
+		return (NULL);
 	else
 	{
 		while (i < size)
