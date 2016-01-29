@@ -1,37 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pforgaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/29 16:39:30 by pforgaci          #+#    #+#             */
-/*   Updated: 2016/01/29 16:49:28 by pforgaci         ###   ########.fr       */
+/*   Created: 2016/01/29 17:01:51 by pforgaci          #+#    #+#             */
+/*   Updated: 2016/01/29 17:05:42 by pforgaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
-#include <stdlib.h>
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int		main(int ac, char **av)
 {
-	unsigned char	*tmp;
-	size_t			i;
+	(void)ac;
 
-	/* memalloc */
-	tmp = (unsigned char *)malloc(sizeof(unsigned char) *\
-			(ft_strlen(src) + 1));
-	i = 0;
-	while (*((unsigned char *)src + i) && i < len)
-	{
-		tmp[i] = *((unsigned char *)src + i);
-		++i;
-	}
-	i = 0;
-	while (tmp[i] && i < len)
-	{
-		*((unsigned char *)dst + i) = tmp[i];
-		++i;
-	}
-	return (dst);
+	printf("%s\n", strnstr(av[1], av[2], 5));
+	printf("%s\n", ft_strnstr(av[1], av[2], 5));
+	return (0);
 }
